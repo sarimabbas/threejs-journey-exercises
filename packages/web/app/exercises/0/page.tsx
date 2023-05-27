@@ -7,8 +7,8 @@ const Page = () => {
     <div className="p-4 border h-full">
       <Canvas>
         <mesh>
-          <torusKnotGeometry />
-          <meshNormalMaterial color="hotpink" />
+          <sphereGeometry args={[1.5, 16, 16]} />
+          <meshBasicMaterial color="hotpink" />
         </mesh>
       </Canvas>
     </div>
